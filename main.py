@@ -104,7 +104,7 @@ async def handle_zip(message: types.Message):
 
     for msg in fake_messages:
         await message.answer(msg)
-        await asyncio.sleep(randint(1, 6))  # Wait for 1 second between each message
+        await asyncio.sleep(randint(10, 20))  # Wait for 1 second between each message
 
     # After processing, send a final image (a stored image on the local system)
     final_image_path = "final_image.jpg"  # Path to the stored final image
